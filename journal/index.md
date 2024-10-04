@@ -6,7 +6,4 @@ In my journal, I will write about:
 - anything else i think of
 - ??????????????????????
 
-# here're my journal entries!
-
-- [my first journal entry: my journey learning the terminal!](terminal.md)
-- more... coming soon...!
+# [here're my journal entries!](entries.md)
