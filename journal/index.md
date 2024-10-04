@@ -8,5 +8,5 @@ In my journal, I will write about:
 
 # here're my journal entries!
 
-- [my journey learning the terminal](terminal.md)
+- [my first journal entry: my journey learning the terminal!](terminal.md)
 - more... coming soon...!
