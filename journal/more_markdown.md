@@ -15,4 +15,4 @@
 
 [this is the text that is displayed](www.example.com)
 ![i LOVE tempest prognosticators!](https://whitbymuseum.org.uk/wp-content/uploads/2021/07/temp_tempest.webp)
-![i LOVE TEMPEST PROGNOSTICATORS SOOOOOO MUCH](../../Downloads/tempest_prognostie.jpg)
+![i LOVE TEMPEST PROGNOSTICATORS SOOOOOO MUCH](../../Downloads/tempie_prognostie.jpg)
