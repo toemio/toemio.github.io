@@ -14,5 +14,4 @@
 ## here's a link!
 
 [this is the text that is displayed](www.example.com)
-
-![this is the text](file:///Users/1012666/Desktop/images.jpg)
+[i LOVE tempest prognosticators!](https://whitbymuseum.org.uk/wp-content/uploads/2021/07/temp_tempest.webp)
