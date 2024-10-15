@@ -9,7 +9,7 @@ In my journal, I will write about:
 
 # here're my journal entries!
 1. my [first](entries/entry_01.md) journal entry
-2. more to come... soon!
+2. my... [third?](entries/entry_03.md) journal entry
 
 
 
