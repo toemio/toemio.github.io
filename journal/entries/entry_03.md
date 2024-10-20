@@ -1,12 +1,14 @@
-this is meant to be journal entry 3 but i forgot to complete that so it'll just be math problems for now
+In English 10, we learned about an acronym called TBEAR, which we should use when writing an essay. TBEAR stands for:
 
-$\frac{2}{4}$
+|T|Thesis Statement    |
+|B|Bridge (to Evidence)|
+|E|Evidence            |
+|A|Analysis            |
+|R|Reflection          |
 
-$\sqrt{3x-1}+(1+x)^2$
+Identifying these parts of your essay (either by highlighting or changing the colors of the sentences) lets you improve on and better visualize how your essay flows. This is especially important when writing a short essay (which we are doing in English right now) because you need to fit a lot of information in a small amount of space.
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+![image](https://thetruthfultutor.com/wp-content/uploads/2018/08/Copy-of-TBEAR.jpg)
 
-|what's going on|hello?|what|
-|---------------|------|----|
-|hello? hello? h|what  |help|
+
 
