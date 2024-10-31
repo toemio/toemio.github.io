@@ -2,4 +2,4 @@ I studied three websites to make my website. Initially, I looked at resturants, 
 
 Finding the right theme with Wordpress was a little difficult, but I found one that was customizable enough to my liking. I could change the font and font size, which I'm pretty sure some of my classmates had trouble with. Even then, I wished I could have customized the website some more. Still, Wordpress seems like a great platform for people just starting out making their own business. It's pretty simple, except for the fact I had some trouble navigating their site. That could have just been a skill issue, though.
 
-Find my website [here](godilovesoup.wordpress.com)!
+Find my website [here](https://godilovesoup.wordpress.com)!
