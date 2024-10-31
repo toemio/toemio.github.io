@@ -10,6 +10,6 @@ In my journal, I will write about:
 # here're my journal entries!
 1. my [first](entries/entry_01.md) journal entry
 2. my... [third?](entries/entry_03.md) journal entry
-
+3. my [fourth](entries/entry_04.md) journal entry
 
 
