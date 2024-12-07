@@ -2,35 +2,6 @@
         background-color: #f38fc3;
         color: #4d046f;
       }
-      div.maia {
-        text-align: center;
-        color: #680696;
-        background-color: #e8b9f5;
-        border-style: double;
-        border-color: #8609ee;
-        border-width: 10px;
-        padding: 10px 0;
-      }
-      div.sillies {
-        text-align: center;
-        display: inline-block;
-        background-color: #b4daee;
-        border-color: #536fed;
-        color: #4463f2;
-        font-family: monospace;
-        border-style: double;
-        border-width: 5px;
-      }
-      div.anotherbanger {
-        text-align: center;
-        display: inline-block;
-        background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
-        border-color: #90ea40;
-        font-size: 20px;
-        color: #c6f69b;
-        border-style: inset;
-        border-width: 4px;
-        padding: 10px;
       th {
 	border: 1px;
 	border: dotted;
@@ -39,3 +10,84 @@
 	border: 1px;
 	border: dotted;
       } 
+      img.fuck {
+        opacity: 0;
+      }
+      #htmlcss {
+	background-color: #f38fc3;
+	border: double 5px #8609ee;
+	width: 20%;
+      }
+      div.holder {
+	width: 50%;
+	color: #4d046f;
+	border: double 5px #8609ee;
+	display: inline-block;
+	overflow: hidden;
+	background-color: #f38fc3;
+      }
+      div.stayflexy {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+      }
+      div.badges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2px;
+      }
+      div.wgat {
+        text-align: center;
+      }
+      div.fence {
+        margin-left: 5px;
+        margin-right: 5px;
+        background-image: url(https://www.cameronsworld.net/img/content/15/35.gif);
+        height: 38px;
+	width: auto;
+        margin-bottom: 10px;
+      }
+      div.maia {
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 5%;
+        width: 50%;
+        color: #8609ee;
+        border: 10px double #8609ee;
+        background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
+        padding: 10px;
+      }
+      div.sillies {
+        text-align: center;
+        background-color: #bfe6ff;
+        color: #0068fd;
+	margin: 5px;
+	margin-top: 0px;
+	width: 20%;
+	font-size: 5px;
+	display: inline-block;
+	border: outset 5px #0068fd;
+	padding: 5px;
+      }
+      div.anotherbanger {
+        text-align: left;
+        background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
+        font-size: 15px; 
+	color: #c6f69b;
+	border: inset 4px #90ea40;
+	padding: 10px;
+	margin: 5px;
+	margin-top: 0px;
+	width: 20%;
+      }
+      div.pointfive {
+	margin: 10px;
+	border: double 1px #b87ef2;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+      }
