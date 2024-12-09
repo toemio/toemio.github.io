@@ -1,14 +1,10 @@
-      body {
+	body {
         background-color: #f38fc3;
+        background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
         color: #4d046f;
       }
-      th {
-	border: 1px;
-	border: dotted;
-      } 
-      td {
-	border: 1px;
-	border: dotted;
+      th, td {
+	border: 1px dotted;
       } 
       img.fuck {
         opacity: 0;
@@ -37,9 +33,6 @@
 	justify-content: center;
 	margin: 2px;
       }
-      div.wgat {
-        text-align: center;
-      }
       div.fence {
         margin-left: 5px;
         margin-right: 5px;
@@ -49,12 +42,8 @@
         margin-bottom: 10px;
       }
       div.maia {
-        text-align: center;
-        margin-left: 5%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px
         display: inline-block;
-        margin-right: 5%;
         width: 50%;
         color: #8609ee;
         border: 10px double #8609ee;
@@ -86,7 +75,7 @@
       }
       div.pointfive {
 	margin: 10px;
-	border: double 1px #b87ef2;
+	border: double 10px #b87ef2;
 	text-align: center;
 	vertical-align: top;
 	display: inline-block;
