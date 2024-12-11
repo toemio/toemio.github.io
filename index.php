@@ -16,10 +16,10 @@
         font-size: 21px;
 	margin: 10px;
       }
-      maia {
+      div.maia {
 	text-align: center;
       }
-      holder {
+      div.holder {
 	width: 50%;
       }
     </style>
