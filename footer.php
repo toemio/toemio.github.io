@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <head>
 <style>
-footer {
-	color: #4d046f;
-	border-top: double 5px #8609ee;
-	display: inline-block;
-	overflow: hidden;
-	background-color: #f38fc3;
-    text-align: center;
-        font-size: 30px;
-	bottom: 0;
-	position: fixed;
-	}
-
-div.badges {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 3px;
-      }
+<link rel="stylesheet" href="../stylinson.css"
 </style>
 </head>
 <footer>

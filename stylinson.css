@@ -15,7 +15,6 @@
 	width: 20%;
       }
       div.holder {
-	width: 50%;
 	color: #4d046f;
 	border: double 5px #8609ee;
 	display: inline-block;
@@ -34,8 +33,6 @@
 	margin: 2px;
       }
       div.fence {
-        margin-left: 5px;
-        margin-right: 5px;
         background-image: url(https://www.cameronsworld.net/img/content/15/35.gif);
         height: 38px;
 	width: auto;
@@ -45,7 +42,7 @@
 	text-align: center;
         margin: 10px
         display: inline-block;
-        width: 100%;
+        width: auto;
         color: #8609ee;
         border: 10px double #8609ee;
         background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
@@ -77,3 +74,14 @@
 	vertical-align: top;
 	display: inline-block;
       }
+      div.footer {
+	color: #4d046f;
+	border-top: double 5px #8609ee;
+	overflow: hidden;
+	background-color: #f38fc3;
+        text-align: center;
+        font-size: 30px;
+	bottom: 0;
+	position: relative;
+	margin-top: auto;
+	}
