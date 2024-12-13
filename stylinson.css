@@ -74,14 +74,10 @@
 	vertical-align: top;
 	display: inline-block;
       }
-      div.footer {
-	color: #4d046f;
-	border-top: double 5px #8609ee;
-	overflow: hidden;
-	background-color: #f38fc3;
-        text-align: center;
-        font-size: 30px;
-	bottom: 0;
-	position: relative;
-	margin-top: auto;
+      div.thewebsiteof {
+	display: inline-block;
+	color: #FFF;
+	background-color: #000;
+	border: 5px dotted #FFF;
+	font-size: 5px;
 	}
