@@ -1,87 +1,93 @@
-	body {
-        background-color: #f38fc3;
-        background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
-        color: #4d046f;
-      }
-      th, td {
-	border: 1px dotted;
-      } 
-      img.fuck {
+       body {
+    color: #FFF;
+    background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
+    }
+
+        th, td {
+        border: 1px dotted;
+    }
+
+   .transparent {
         opacity: 0;
-      }
-      #htmlcss {
-	background-color: #f38fc3;
-	border: double 5px #8609ee;
-	width: 20%;
-      }
-      div.holder {
-	color: #4d046f;
-	border: double 5px #8609ee;
-	display: inline-block;
-	overflow: hidden;
-	background-color: #f38fc3;
-      }
-      div.stayflexy {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-      }
-      div.badges {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 2px;
-      }
-      div.fence {
-        background-image: url(https://www.cameronsworld.net/img/content/15/35.gif);
-        height: 38px;
-	width: auto;
-        margin-bottom: 10px;
-      }
-      div.maia {
-	text-align: center;
-        margin: 10px
-        display: inline-block;
-        width: auto;
-        color: #8609ee;
-        border: 10px double #8609ee;
-        background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
-        padding: 10px;
-      }
-      div.sillies {
-        text-align: center;
-        background-color: #bfe6ff;
-        color: #0068fd;
-	margin: 5px;
-	font-size: 5px;
-	display: inline-block;
-	border: outset 5px #0068fd;
-	padding: 5px;
-      }
-      div.anotherbanger {
-        text-align: left;
-        background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
-        font-size: 15px; 
-	color: #c6f69b;
-	border: inset 4px #90ea40;
-	padding: 10px;
-	margin: 5px;
-      }
-      div.pointfive {
-	margin: 10px;
-	border: double 10px #b87ef2;
-	text-align: center;
-	vertical-align: top;
-	display: inline-block;
-      }
-      div.footer {
-	color: #4d046f;
-	border-top: double 5px #8609ee;
-	overflow: hidden;
-	background-color: #f38fc3;
-        text-align: center;
-        font-size: 30px;
-	bottom: 0;
-	position: relative;
-	margin-top: auto;
-	}
+    } 
+
+   #htmlcss {
+    background-color: rgba(230 100 150 / 30%);
+    border: double 5px #f38fc3;
+    border-radius: 15px;
+        color: rgba(250 240 255);
+    max-width: 20%;
+    }
+   
+   .maia {
+    background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
+    border: double 10px #8609ee;
+    border-radius: 15px;
+    color: #8609ee;
+    font-size: 20px;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    width: 95%;
+    } 
+
+   .maintext {
+    background-color: rgba(230 160 205 / 30%);
+    border: double 5px #f38fc3;
+    border-radius: 15px;
+        color: rgba(250 240 255);
+    overflow: hidden;
+    padding: 5px;
+    grid-row: 1 / 5;
+    }
+   
+   .green {
+    background-color: rgba(100 130 100 / 30%);
+    border: dashed 2px rgba(150 200 100);
+    border-radius: 5px;
+        color: rgba(230 250 200);
+    overflow: hidden;
+    padding: 5px;
+    }
+
+   .square {
+    background-color: rgba(50 50 100 / 30%);
+    border: solid 1px rgba(200 150 0);
+    color: rgba(250 200 0);
+    overflow: hidden;
+    padding: 5px;
+    grid-column: 2 / 4;
+    }
+
+   .grid {
+    border: solid 1px #FFF;
+        display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+    margin: auto;
+    max-width: 75%;
+    padding: 5px;
+    }
+   
+   .footer {
+    background-color: rgba(230 160 205 / 30%);
+    border: double 5px #8609ee;
+    border-radius: 25px;
+    color: #e892ca;
+    font-size: 15px;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    grid-column: 1 / 4;
+    }
+   
+   .badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2px;
+    }
+
+   .hpink {
+    color: #f38fc3;
+    }
