@@ -7,19 +7,32 @@
 <link rel="stylesheet" href="stylinson.css">
 <style>
 
-   .maintext {
+   #one {
     grid-row: 1 / 5;
     }
     
-   .green {
+   #two {
     }
       
-   .square {
-    grid-column: 2 / 4;
+   #three {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    padding: 15px;
+    font-family: cursive;
     }
-   	
+
+   #four {
+    grid-row: 3;
+    grid-column: 4;
+    padding: 5px;
+    margin: auto;
+    border: solid 1px rgba(200 150 0);
+    border-radius: 5%;
+    }
+	
    .footer {
-    grid-column: 1 / 4;
+    grid-row: 8;
+    grid-column: 1 / 6;
     }
 </style>
 </head>
@@ -30,15 +43,31 @@
 
 <div class="grid">
 
-<div class="maintext"><p>what's up man. i'm <span class="hpink">Tomio</span>. i'm in 10th grade at the <span class="hpink">Arlington Career Center</span>, and i made this website for my <span class="hpink">DE Webdev class.</span><br>
-one of my biggest interests is <span class="hpink">art</span>. all types. well, some of them. i love <span class="hpink">drawing</span> (mostly digitally), i love <span class="hpink">writing</span>, and i play the <span class="hpink">piano</span>.</p></div>
+<div class="maintext" id="one"><p>
 
+what's up man. i'm <span class="hpink">Tomio</span>. i'm in 10th grade at the <span class="hpink">Arlington Career Center</span>, and i made this website for my <span class="hpink">DE Webdev class.</span><br>
+one of my biggest interests is <span class="hpink">art</span>. all types. well, some of them. i love <span class="hpink">drawing</span> (mostly digitally), i love <span class="hpink">writing</span>, and i play the <span class="hpink">piano</span>.</p>
+
+<div class="flexbox" style="margin:auto;">
+
+<a href="https://toemio.github.io/journal/">
+<img src="https://www.cameronsworld.net/img/content/15/row-2/7.gif" alt="A thick computer with a light purple screen displaying the phrase Good Luck to you" style="display:inline-block;">
+</a>
+
+<p style="display:inline-block;"> Click on the <span class="hpink">computer</span> to see my <span class="hpink">journal!</span></p></div>
+</div>
 <div class="square"><p>I'VE COME TO MAKE AN ANNOUNCEMENT. SHADOW THE HEDGEHOG IS</p></div>
 
-<div class="green"><q>There is a rumour going around that I have found God. I think this is unlikely because I have enough difficulty finding my keys, and there is empirical evidence that they exist.</q>
+<div class="green" id="three"><q>There is a rumour going around that I have found God. I think this is unlikely because I have enough difficulty finding my keys, and there is empirical evidence that they exist.</q>
 <cite>Terry Pratchett</cite></div>
 
-<div>2</div>
+<img id="four" src="me.jpg"
+	  		alt="a 0.5 photo of me"
+	  		srcset="image/me_sizes/me_small.jpg 400w,
+	       			image/me_sizes/me_medium.jpg 800w,
+	       			image/me_sizes/me_large.jpg 1200w"
+	  		sizes="(max-width: 480px) 95vw,
+			       (max-width: 800px) 45vw, 30vw">
 <div>3</div>
 <div>4</div>
 <div>1</div>
@@ -75,7 +104,6 @@ one of my biggest interests is <span class="hpink">art</span>. all types. well, 
 <img src="https://cyber.dabamos.de/88x31/thankwing.gif">
 <img src="https://cyber.dabamos.de/88x31/tidw2.gif">
 <img src="https://cyber.dabamos.de/88x31/tfnow.gif">
-<img src="https://cyber.dabamos.de/88x31/thankwing.gif">
 <img src="https://cyber.dabamos.de/88x31/transnow2.gif">
 <img src="https://cyber.dabamos.de/88x31/tyg.gif">
 <img src="https://cyber.dabamos.de/88x31/tranarchy.gif">

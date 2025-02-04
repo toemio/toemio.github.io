@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10x10 Grid with CSS Grid</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      width: 100vmin;
+      height: 100vmin;
+      margin:auto;
+    }
+
+    .grid-container div {
+      background-color: #ddd;
+      border: 1px solid #fff; /* Optional border for better visual separation */
+    }
+
+    /* Color every 3rd square */
+    .grid-container div:nth-child(10n+5),
+    .grid-container div:nth-child(10n+6) { 
+ background-color: #ffcc5c;
+    }
+
+
+
+
+    /* Color specific squares */
+    .grid-container div:nth-child(55),
+    .grid-container div:nth-child(56),
+    .grid-container div:nth-child(45),
+    .grid-container div:nth-child(46) {
+        background-color:black;
+    }
+
+.grid-container div:nth-child(n+41):nth-child(-n+44),
+.grid-container div:nth-child(n+47):nth-child(-n+54),
+.grid-container div:nth-child(n+57):nth-child(-n+60) {
+
+background-color: #ffcc5c;
+}
+    
+    /* Color every even square */
+    .grid-container div:nth-child() {
+      background-color: #76b5c5;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- 100 divs -->
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+</body>
+</html>

@@ -42,10 +42,9 @@
     }
    
    .green {
-    background-color: rgba(100 130 100 / 30%);
-    border: dashed 2px rgba(150 200 100);
-    border-radius: 5px;
-        color: rgba(230 250 200);
+    background-color: rgba(100 130 100 / 30%);   
+    border: solid 1px rgba(230 250 200);
+    color: rgba(230 250 200);
     overflow: hidden;
     padding: 5px;
     }
@@ -60,13 +59,16 @@
     }
 
    .grid {
-    border: solid 1px #FFF;
         display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     gap: 5px;
     margin: auto;
     max-width: 75%;
     padding: 5px;
+    }
+   
+   .flexbox {
+    display: flex;
     }
    
    .footer {
