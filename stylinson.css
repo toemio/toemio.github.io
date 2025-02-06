@@ -7,6 +7,19 @@
         border: 1px dotted;
     }
 
+    a:link {
+	color: #f38fc3;
+    }
+
+    a:visited {
+	color: #d95bc8;
+    }
+
+    a:hover {
+	color: #f38fc3;
+	text-decoration: underline;
+    }
+
    .transparent {
         opacity: 0;
     } 
