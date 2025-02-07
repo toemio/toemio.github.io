@@ -25,12 +25,17 @@
     } 
 
    #htmlcss {
-    background-color: rgba(230 100 150 / 30%);
-    border: double 5px #f38fc3;
-    border-radius: 15px;
-        color: rgba(250 240 255);
+    color: rgba(250 240 255);
     max-width: 20%;
+    background-color: rgba(230 160 205 / 30%);
+    border: double 5px #8609ee;
+    border-radius: 25px;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    grid-column: 1 / 4;
     }
+
    
    .maia {
     background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
@@ -84,17 +89,6 @@
     display: flex;
     }
    
-   .footer {
-    background-color: rgba(230 160 205 / 30%);
-    border: double 5px #8609ee;
-    border-radius: 25px;
-    color: #e892ca;
-    font-size: 15px;
-    margin: auto;
-    padding: 2px;
-    text-align: center;
-    grid-column: 1 / 4;
-    }
    
    .badges {
         display: flex;
