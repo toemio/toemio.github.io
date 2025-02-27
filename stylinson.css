@@ -1,9 +1,9 @@
-       body {
+    body {
     color: #FFF;
     background-image: url(https://i.pinimg.com/originals/ab/01/cb/ab01cbba05d8c2500c925ec0f9a0476c.gif);
     }
 
-        th, td {
+    th, td {
         border: 1px dotted;
     }
 
@@ -36,7 +36,6 @@
     grid-column: 1 / 4;
     }
 
-   
    .maia {
     background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
     border: double 10px #8609ee;
@@ -47,54 +46,60 @@
     padding: 2px;
     text-align: center;
     width: 95%;
-    } 
+    }
+    
+   .purple {
+    background: #ab6fe348;
+    border: double 5px #de64af;
+   	border-radius: 15px;
+    color: #f7dce5;
+    overflow: hidden;
+    padding: 5px;
+  	margin: auto;
+    }
 
    .maintext {
     background-color: rgba(230 160 205 / 30%);
     border: double 5px #f38fc3;
     border-radius: 15px;
-        color: rgba(250 240 255);
+    color: rgba(250 240 255);
     overflow: hidden;
     padding: 5px;
-    grid-row: 1 / 5;
+    }
+    
+   .flex {
+    display: flex;
+    flex-wrap: wrap;
     }
    
    .green {
-    background-color: rgba(100 130 100 / 30%);   
-    border: solid 1px rgba(230 250 200);
-    color: rgba(230 250 200);
+    background-color: #dbc47648;   
+    border: solid 1px #ebbf2f;
+    color: #ede3c2;
     overflow: hidden;
     padding: 5px;
     }
 
    .square {
-    background-color: rgba(50 50 100 / 30%);
-    border: solid 1px rgba(200 150 0);
-    color: rgba(250 200 0);
-    overflow: hidden;
+    background-color: #c1d0e348;
+    border: dashed 2px #dddaed;
+    color: #dddaed;
     padding: 5px;
-    grid-column: 2 / 4;
     }
 
    .grid {
-        display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
     gap: 5px;
     margin: auto;
     max-width: 75%;
-    padding: 5px;
     }
-   
-   .flexbox {
-    display: flex;
-    }
-   
-   
+  
    .badges {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2px;
     }
 
    .hpink {
