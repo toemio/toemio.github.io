@@ -1,63 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>canvas self portrait</title>
-	<script src="../js/init.js"></script>
-	<style>	
-        canvas{
-            display:block;
-            border:1px solid;
-            margin:auto;
-            margin-top:50px
-        }
-	</style>
-</head>
+<html>
 <body>
-<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
 <script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
 
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
+// unused linear gradient w pink and purple
+//const grad=ctx.createLinearGradient(0,0,280,280);
+//grad.addColorStop(0, "#efc3e6");
+//grad.addColorStop(1, "#640fe8"); 
 
-    //fill the entire background with green
-    ctx.fillStyle = 'green';
+// Fill rectangle with gradient
+//ctx.fillStyle = grad;
+//ctx.fillRect(10,10,380,380);
+
+	ctx.fillStyle = "#111";
     ctx.fillRect(0,0,400,400);
-
-    //a big grey rectangle, using hex colors
-    ctx.fillStyle = "#999999";
-    ctx.fillRect(10, 10, 200, 100);
-
-    //a blue square
-    ctx.fillStyle = "blue";
-    ctx.fillRect(100,100,100,100);
-
-    //a blue half-circle with a thick red outline
-    ctx.strokeStyle = "red";
-    ctx.lineWidth=10;
+    
+// hair
+    ctx.fillStyle = "#FFFEFE";
+	ctx.fillRect(210, 105, 80, 180);
+    
+    ctx.fillStyle = "#FFFEFE";
+	ctx.fillRect(170, 105, 100, 100);
+    ctx.fillStyle = "#FFFEFE";
+	ctx.fillRect(150, 110, 50, 30);
+//body
+    ctx.fillStyle = "#FFFEFE";
+	ctx.fillRect(100, 280, 280, 110);
+    
+    
+    
+//hair
     ctx.beginPath();
-    ctx.arc(100,300,25,0,Math.PI);
+    ctx.strokeStyle = "#F55";
+    ctx.lineWidth=3;
+    ctx.moveTo(160,137);
+    ctx.lineTo(155,120);
+    ctx.lineTo(150,110);
+    ctx.lineTo(170,110);
+    ctx.lineTo(220,160);
+    ctx.lineTo(260,190);
+    ctx.lineTo(255,300);
+    ctx.lineTo(280,270);
+    ctx.stroke();
+
+	//face
+    ctx.beginPath();
+    ctx.fillStyle='#FFFEFE';
+    ctx.moveTo(175,115);
+    ctx.lineTo(157,145);
+    
+    //cheek
+    ctx.lineTo(155,175);
+    ctx.lineTo(158,185);
+    ctx.lineTo(153,200);
+    ctx.lineTo(165,235);
+    
+    //chin
+    ctx.lineTo(180,260);
+    ctx.lineTo(250,250);
+    ctx.lineTo(257,225);
+    ctx.stroke();
+    ctx.fill();
+    
+    //body + neck
+    ctx.beginPath();
+    ctx.moveTo(200,257);
+    ctx.lineTo(205,280);
+    ctx.lineTo(110,310);
+    ctx.stroke();
+   
+   //glasses left
+   ctx.beginPath();
+   ctx.lineWidth=1;
+   ctx.fillStyle="#FAA3"
+   ctx.strokeStyle = "#F55";
+   ctx.moveTo(220,175);
+   ctx.lineTo(210,170);
+   ctx.lineTo(188,172);
+   ctx.lineTo(180,185);
+   //eyeline ^^ this guy
+   ctx.lineTo(187,200);
+   ctx.lineTo(200,205);
+   ctx.lineTo(215,200);
+   ctx.lineTo(222,185);
+   ctx.lineTo(220,175);
+   ctx.stroke();
+   ctx.fill();
+   
+   //glasses right
+   ctx.beginPath();
+   ctx.lineWidth=1;
+   ctx.fillStyle="#FAA3"
+   ctx.strokeStyle = "#F55";
+   ctx.moveTo(167,185);
+   ctx.lineTo(160,172);
+   ctx.lineTo(150,174);
+   ctx.lineTo(145,185);
+   ctx.lineTo(145,185);
+   ctx.lineTo(150,200);
+   ctx.lineTo(155,205);
+   ctx.lineTo(163,200);
+   ctx.lineTo(167,185);
+   ctx.stroke();
+   ctx.fill();
+   
+   //eye
+    ctx.beginPath();
+    ctx.fillStyle='#111';
+    ctx.strokeStyle = "#111";
+    ctx.lineWidth=2;
+    ctx.moveTo(220,179);
+    ctx.lineTo(195,180);
+    ctx.lineTo(190,185);
+    ctx.lineTo(203,190);
+    ctx.lineTo(215,185);
     ctx.stroke();
     ctx.fill();
 
-    //a yellow ellipse
-    ctx.fillStyle='lemonchiffon';
-    ctx.beginPath();
-    ctx.ellipse(200,200,100,50,0.25*Math.PI,0,2*Math.PI);
-    ctx.fill();
 
-    //a weird purple polygon
-    //notice that the polygon closes itself 
-    //but the stroke doesn't
-    ctx.fillStyle='purple'
-    ctx.beginPath();
-    ctx.moveTo(350,350);
-    ctx.lineTo(250,350);
-    ctx.lineTo(220,220);
-    ctx.lineTo(370,160);
-    ctx.lineTo(300,300);
-    ctx.stroke();
-    ctx.fill();
-  
 </script>
+
 </body>
 </html>
