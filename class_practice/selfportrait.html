@@ -29,21 +29,18 @@ const ctx = c.getContext("2d");
     ctx.fillStyle = "#FFFEFE";
 	ctx.fillRect(170, 105, 100, 100);
     ctx.fillStyle = "#FFFEFE";
-	ctx.fillRect(150, 110, 50, 30);
+	ctx.fillRect(160, 110, 50, 30);
 //body
     ctx.fillStyle = "#FFFEFE";
 	ctx.fillRect(100, 280, 280, 110);
-    
-    
     
 //hair
     ctx.beginPath();
     ctx.strokeStyle = "#F55";
     ctx.lineWidth=3;
     ctx.moveTo(160,137);
-    ctx.lineTo(155,120);
-    ctx.lineTo(150,110);
-    ctx.lineTo(170,110);
+    ctx.lineTo(165,115);
+    ctx.lineTo(200,110);
     ctx.lineTo(220,160);
     ctx.lineTo(260,190);
     ctx.lineTo(255,300);
@@ -63,7 +60,7 @@ const ctx = c.getContext("2d");
     ctx.lineTo(165,235);
     
     //chin
-    ctx.lineTo(180,260);
+    ctx.lineTo(185,260);
     ctx.lineTo(250,250);
     ctx.lineTo(257,225);
     ctx.stroke();
@@ -81,8 +78,7 @@ const ctx = c.getContext("2d");
    ctx.lineWidth=1;
    ctx.fillStyle="#FAA3"
    ctx.strokeStyle = "#F55";
-   ctx.moveTo(220,175);
-   ctx.lineTo(210,170);
+   ctx.lineTo(215,172);
    ctx.lineTo(188,172);
    ctx.lineTo(180,185);
    //eyeline ^^ this guy
@@ -90,7 +86,16 @@ const ctx = c.getContext("2d");
    ctx.lineTo(200,205);
    ctx.lineTo(215,200);
    ctx.lineTo(222,185);
-   ctx.lineTo(220,175);
+   ctx.lineTo(215,172);
+   ctx.stroke();
+   ctx.fill();
+   
+   //glasses mid
+   ctx.beginPath();
+   ctx.lineWidth=1;
+   ctx.strokeStyle = "#F55";
+   ctx.moveTo(180,185);
+   ctx.lineTo(161,185);
    ctx.stroke();
    ctx.fill();
    
@@ -129,3 +134,4 @@ const ctx = c.getContext("2d");
 
 </body>
 </html>
+
