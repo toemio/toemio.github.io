@@ -8,7 +8,7 @@ let dy =1;
 
 //define functions
 function drawRect(x,y) {
-    console.log("drawing rect");
+    //console.log("drawing rect");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'blue';
     ctx.fillRect(x,y,50,50);
@@ -39,7 +39,14 @@ function animate() {
         dy = dy * -1;
     }
     requestAnimationFrame(animate);
+
 }
+function handleKeyPress(w){
+    console.log(w.key);
+}
+
+//2 inputs: what type of event, a function to call
+document.addEventListener('keydown', handleKeyPress);
 
 //call our function
 animate();
