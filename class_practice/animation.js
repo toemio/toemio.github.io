@@ -6,6 +6,27 @@ let dx = 5;
 let y = 0;
 let dy =1; 
 
+
+//this is an object
+//we access values in an object like this:
+//player.x
+
+
+const player = {
+	//key:value pair
+	x : 0,
+	y : 0,
+	color: '#EFE8FF',
+	speed: 3
+};
+
+//this is also an object. we access values from this ,ind of object
+//like this:
+// keys['ArrowUp']
+const keys = {};
+
+
+
 //define functions
 function drawRect(x,y) {
     //console.log("drawing rect");
@@ -15,9 +36,41 @@ function drawRect(x,y) {
     ctx.fill();
 }
 
+function drawPlayer(){
+	ctx.fillStyle = player.color;
+	ctx.beginPath();
+	ctx.arc(
+		player.x,
+		player.y,
+		20,
+		0,
+		2*Math.PI
+	);
+	ctx.fill();
+}
+
+function movePlayer(){
+	//player.x = player.x + player.speed;
+	//player.x += player.speed;
+	if(keys['ArrowDown']){
+		player.y += player.speed;
+	}
+	if(keys['ArrowUp']){
+		player.y -= player.speed;
+	}
+	if(keys['ArrowRight']){
+		player.x += player.speed;
+	}
+	if(keys['ArrowLeft']){
+		player.x -= player.speed;
+	}
+}
+
+
 function animate() {
     drawRect(x,y);
-
+	drawPlayer();
+	movePlayer();
     // TODO: Add some code here 
     //  that will change the rectangle's position
     x = x + dx;
@@ -42,11 +95,18 @@ function animate() {
 
 }
 function handleKeyPress(w){
-    console.log(w.key);
+    //console.log(w.key);
+	keys[w.key] = true;
 }
 
 //2 inputs: what type of event, a function to call
 document.addEventListener('keydown', handleKeyPress);
+document.addEventListener('keyup', (w) => {
+	//console.log(w.key + " up");
+	keys[w.key] = false;
+});
+
+
 
 //call our function
 animate();
