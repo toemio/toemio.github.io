@@ -65,18 +65,17 @@ function movePlayer(){
 		player.x -= player.speed;
 	}
 
-	if(x > 350){
-        dx = dx * -1;
+	if(player.x > 350){
+        player.x -= 1;
     }
-    if(x < 0){
-        dx = dx * -1;
+    if(player.x < 0){
+        player.x += -1;
     }
-
-    if(y > 350){
-        dy = dy * -1;
+    if(player.y > 350){
+        player.y -= 1;
     }
-    if(y < 0){
-        dy = dy * -1;
+    if(player.y < 0){
+        player.y += 1;
     }
 
 }
