@@ -64,6 +64,21 @@ function movePlayer(){
 	if(keys['ArrowLeft']){
 		player.x -= player.speed;
 	}
+
+	if(x > 350){
+        dx = dx * -1;
+    }
+    if(x < 0){
+        dx = dx * -1;
+    }
+
+    if(y > 350){
+        dy = dy * -1;
+    }
+    if(y < 0){
+        dy = dy * -1;
+    }
+
 }
 
 
