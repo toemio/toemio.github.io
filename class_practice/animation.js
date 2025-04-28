@@ -7,6 +7,9 @@ let y = 0;
 let dy =1; 
 
 
+let score = 0;
+
+
 //this is an object
 //we access values in an object like this:
 //player.x
@@ -58,31 +61,32 @@ function movePlayer(){
 	if(keys['ArrowUp']){
 		player.y -= player.speed;
 	}
-	if(keys['ArrowRight']){
+	if(keys['ArrowRight'] && player.x < 350){
 		player.x += player.speed;
 	}
-	if(keys['ArrowLeft']){
+	if(keys['ArrowLeft'] && player.x > 0){
 		player.x -= player.speed;
 	}
+	if(player.y < 0){
+		player.y = 400;
+	}
+	if(player.y > 400){
+		player.y = 0;
+	}
 
-	if(player.x > 350){
-        player.x -= 1;
-    }
-    if(player.x < 0){
-        player.x += -1;
-    }
-    if(player.y > 350){
-        player.y -= 1;
-    }
-    if(player.y < 0){
-        player.y += 1;
-    }
+}
 
+function drawScore(){
+	ctx.font = "10px Arial";
+	ctx.fillText(score, 10,10);
+	
 }
 
 
 function animate() {
-    drawRect(x,y);
+	score++;
+	drawRect(x,y);
+	drawScore();
 	drawPlayer();
 	movePlayer();
     // TODO: Add some code here 
