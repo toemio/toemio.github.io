@@ -5,16 +5,12 @@ let x = 0;
 let dx = 5;
 let y = 0;
 let dy =1; 
-
-
 let score = 0;
-
+let gameRunning = true;
 
 //this is an object
 //we access values in an object like this:
 //player.x
-
-
 const player = {
 	//key:value pair
 	x : 0,
@@ -23,7 +19,7 @@ const player = {
 	speed: 3
 };
 
-//this is also an object. we access values from this ,ind of object
+//this is also an object. we access values from this kind of object
 //like this:
 // keys['ArrowUp']
 const keys = {};
@@ -61,10 +57,10 @@ function movePlayer(){
 	if(keys['ArrowUp']){
 		player.y -= player.speed;
 	}
-	if(keys['ArrowRight'] && player.x < 350){
+	if(keys['ArrowRight'] && player.x < 400){
 		player.x += player.speed;
 	}
-	if(keys['ArrowLeft'] && player.x > 0){
+	if(keys['ArrowLeft'] && player.x > 50){
 		player.x -= player.speed;
 	}
 	if(player.y < 0){
