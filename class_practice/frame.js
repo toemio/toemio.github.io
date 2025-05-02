@@ -19,7 +19,7 @@ function drawDoritoship(ctx, x, y, angle) {
     ctx.lineTo = "x - 16.75, y + 10.3";
     ctx.lineTo = "x + 15, y - 40";
     ctx.stroke();
-    ctx.fill;
+    ctx.fill();
 }
 
 //    ctx.strokeStyle = "rgba(0 0 255)";

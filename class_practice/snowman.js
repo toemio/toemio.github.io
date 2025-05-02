@@ -39,7 +39,7 @@ function drawSmall(ctx, x, y, angle) {
 	ctx.lineTo(x - 1, y + 1);
 	ctx.lineTo(x, y + 5);
 	ctx.stroke();
-	ctx.fill;
+	ctx.fill();
 }
 
 // stamping star
