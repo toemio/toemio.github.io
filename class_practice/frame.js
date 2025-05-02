@@ -20,18 +20,20 @@ function drawDoritoship(ctx, x, y, angle) {
     ctx.lineTo = "x + 15, y - 40";
     ctx.stroke();
     ctx.fill;
-    ctx.strokeStyle = "rgba(0 0 255)";
-    ctx.lineWidth = 2;
-    ctx.fillStyle = "rgba(255 0 255)";
-    ctx.beginPath();
-    ctx.moveTo = "x, y + 3.25";
-    ctx.lineTo = "x + 3, y + 18.95";
-    ctx.lineTo = "x - 3, y + 3.25";
-    ctx.lineTo = "x - 3, y - 3.25";
-    ctx.lineTo = "x + 3, y - 18.95";
-    ctx.stroke();
-    ctx.fill;
-
 }
+
+//    ctx.strokeStyle = "rgba(0 0 255)";
+//    ctx.lineWidth = 2;
+//    ctx.fillStyle = "rgba(255 0 255)";
+//    ctx.beginPath();
+//    ctx.moveTo = "x, y + 3.25";
+//    ctx.lineTo = "x + 3, y + 18.95";
+//    ctx.lineTo = "x - 3, y + 3.25";
+//    ctx.lineTo = "x - 3, y - 3.25";
+//    ctx.lineTo = "x + 3, y - 18.95";
+//    ctx.stroke();
+//    ctx.fill;
+
+//}
 
 drawDoritoship(ctx, 100, 100);
