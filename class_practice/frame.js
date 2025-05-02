@@ -7,9 +7,9 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 function drawDoritoship(ctx, x, y, angle) {
     ctx.beginPath();
-    ctx.strokeStyle = "rgba(64 128 128)";
+    ctx.strokeStyle = "rgba(64, 128, 128)";
     ctx.lineWidth = 3;
-    ctx.fillStyle = "rgba(0 255 128)";
+    ctx.fillStyle = "rgba(0, 255, 128)";
     ctx.beginPath();    
     ctx.moveTo = "x, y";
     ctx.lineTo = "x + 15, y + 40";
