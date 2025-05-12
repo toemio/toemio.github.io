@@ -11,7 +11,7 @@ const angel = {
     speed: 3,
 };
 
-const keys = {}
+const keys = {};
 
 function drawAngel(ctx, x, y, angle){
     ctx.beginPath();
@@ -26,23 +26,8 @@ function drawAngel(ctx, x, y, angle){
     ctx.lineTo(angel.x, angel.y);
     ctx.stroke();
     ctx.fill();
-    drawAcircle(ctx, x, y, angle)
 }
 
-function drawAcircle(ctx, x, y, radius, startAngle, endAngle) { 
-   ctx.beginPath();
-   ctx.arc(x + 39, y + 28, 3, 0, 2 * Math.PI);
-   ctx.moveTo(x - 39, y + 28);
-   ctx.arc(x - 39, y + 28, 3, 0, 2 * Math.PI);
-   ctx.moveTo(x, y + 15)
-   ctx.arc(x, y + 20, 4, 0, 2 * Math.PI);
-   ctx.moveTo(x + 10, y + 22);
-   ctx.arc(x + 10, y + 22, 2, 0, 2 * Math.PI);
-   ctx.moveTo(x - 10, y + 22);
-   ctx.arc(x - 10, y + 22, 2, 0, 2 * Math.PI);
-   ctx.stroke();
-   ctx.fill();
-}
 
 function moveAngel(){
 	if(keys['ArrowDown']){
