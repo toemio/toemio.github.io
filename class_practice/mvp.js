@@ -8,27 +8,18 @@ let dy =1;
 let score = 0;
 let gameRunning = true;
 
-//this is an object
-//we access values in an object like this:
-//player.x
 const player = {
-	//key:value pair
 	x : 0,
 	y : 0,
 	color: '#EFE8FF',
 	speed: 3
 };
 
-//this is also an object. we access values from this kind of object
-//like this:
-// keys['ArrowUp']
 const keys = {};
 
 
 
-//define functions
 function drawRect(x,y) {
-    //console.log("drawing rect");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'blue';
     ctx.fillRect(x,y,50,50);
@@ -49,8 +40,6 @@ function drawPlayer(){
 }
 
 function movePlayer(){
-	//player.x = player.x + player.speed;
-	//player.x += player.speed;
 	if(keys['ArrowDown']){
 		player.y += player.speed;
 	}
@@ -85,13 +74,9 @@ function animate() {
 	drawScore();
 	drawPlayer();
 	movePlayer();
-    // TODO: Add some code here 
-    //  that will change the rectangle's position
     x = x + dx;
     y = y + dy;
 
-    //if the box goes off the right side of the screen
-    //reset it to the inital position
     if(x > 350){
         dx = dx * -1;
     }
@@ -109,10 +94,11 @@ function animate() {
 
 }
 function handleKeyPress(w){
-    //console.log(w.key);
 	keys[w.key] = true;
 }
 
-
-//call our function
+document.addEventListener('keydown', handleKeyPress);
+document.addEventListener('keyup', (w) => {
+	keys[w.key] = false;
+});
 animate();
