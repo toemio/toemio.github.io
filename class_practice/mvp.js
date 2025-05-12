@@ -45,18 +45,29 @@ function drawAcircle(ctx, x, y, radius, startAngle, endAngle) {
 }
 
 function moveAngel(){
-	if(keys['ArrowRight'] && player.x < 400){
+	if(keys['ArrowDown']){
+		angel.y += angel.speed;
+	}
+	if(keys['ArrowUp']){
+		angel.y -= angel.speed;
+	}
+	if(keys['ArrowRight'] && angel.x < 400){
 		angel.x += angel.speed;
 	}
 	if(keys['ArrowLeft'] && player.x > 50){
 		angel.x -= angel.speed;
-    }
-}
+	}
+	if(angel.y < 0){
+		angel.y = 400;
+	}
+	if(angel.y > 400){
+		angel.y = 0;
+	}
 
+}
 function game() {
     drawAngel();
     moveAngel();
-    requestAnimationFrame(animate);
 }
 
 game();
