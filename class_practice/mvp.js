@@ -2,57 +2,117 @@ const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 let x = 0;
+let dx = 5;
 let y = 0;
+let dy =1; 
+let score = 0;
 let gameRunning = true;
 
-const angel = {
-    x : 0,
-    y : 0,
-    speed: 3,
+//this is an object
+//we access values in an object like this:
+//player.x
+const player = {
+	//key:value pair
+	x : 0,
+	y : 0,
+	color: '#EFE8FF',
+	speed: 3
 };
 
+//this is also an object. we access values from this kind of object
+//like this:
+// keys['ArrowUp']
 const keys = {};
 
-function drawAngel(ctx, x, y, angle){
-    ctx.beginPath();
-    ctx.strokeStyle = "rgba(255, 0, 128)";
-    ctx.lineWidth = 3;
-    ctx.fillStyle = "rgba(255, 255, 128)";
-    ctx.beginPath();
-    ctx.moveTo(angel.x, angel.y);
-    ctx.lineTo(angel.x + 25, angel.y + 20);
-    ctx.lineTo(angel.x, angel.y + 10);
-    ctx.lineTo(angel.x - 25, angel.y + 20);
-    ctx.lineTo(angel.x, angel.y);
-    ctx.stroke();
+
+
+//define functions
+function drawRect(x,y) {
+    //console.log("drawing rect");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(x,y,50,50);
     ctx.fill();
 }
 
+function drawPlayer(){
+	ctx.fillStyle = player.color;
+	ctx.beginPath();
+	ctx.arc(
+		player.x,
+		player.y,
+		20,
+		0,
+		2*Math.PI
+	);
+	ctx.fill();
+}
 
-function moveAngel(){
+function movePlayer(){
+	//player.x = player.x + player.speed;
+	//player.x += player.speed;
 	if(keys['ArrowDown']){
-		angel.y += angel.speed;
+		player.y += player.speed;
 	}
 	if(keys['ArrowUp']){
-		angel.y -= angel.speed;
+		player.y -= player.speed;
 	}
-	if(keys['ArrowRight'] && angel.x < 400){
-		angel.x += angel.speed;
+	if(keys['ArrowRight'] && player.x < 400){
+		player.x += player.speed;
 	}
 	if(keys['ArrowLeft'] && player.x > 50){
-		angel.x -= angel.speed;
+		player.x -= player.speed;
 	}
-	if(angel.y < 0){
-		angel.y = 400;
+	if(player.y < 0){
+		player.y = 400;
 	}
-	if(angel.y > 400){
-		angel.y = 0;
+	if(player.y > 400){
+		player.y = 0;
 	}
 
 }
-function game() {
-    drawAngel();
-    moveAngel();
+
+function drawScore(){
+	ctx.font = "10px Arial";
+	ctx.fillText(score, 10,10);
+	
 }
 
-game();
+
+function animate() {
+	score++;
+	drawRect(x,y);
+	drawScore();
+	drawPlayer();
+	movePlayer();
+    // TODO: Add some code here 
+    //  that will change the rectangle's position
+    x = x + dx;
+    y = y + dy;
+
+    //if the box goes off the right side of the screen
+    //reset it to the inital position
+    if(x > 350){
+        dx = dx * -1;
+    }
+    if(x < 0){
+        dx = dx * -1;
+    }
+
+    if(y > 350){
+        dy = dy * -1;
+    }
+    if(y < 0){
+        dy = dy * -1;
+    }
+    requestAnimationFrame(animate);
+
+}
+function handleKeyPress(w){
+    //console.log(w.key);
+	keys[w.key] = true;
+}
+
+
+//call our function
+animate();
