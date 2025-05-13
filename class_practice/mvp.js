@@ -12,7 +12,7 @@ const player = {
 	x : 200,
 	y : 320,
 	speed: 5
-};
+}
 
 const keys = {};
 
@@ -25,7 +25,7 @@ function drawRect(x,y) {
     ctx.fill();
 }
 
-function drawPlayer(){
+function drawPlayer() {
 	ctx.beginPath();
 	ctx.strokeStyle = "rgba(255, 0, 128)";
 	ctx.lineWidth = 3;
@@ -44,36 +44,51 @@ function drawPlayer(){
 function drawCircles() {
 	ctx.beginPath();
 	ctx.arc(player.x + 39, player.y + 28, 3, 0, 2 * Math.PI);
-        ctx.moveTo(player.x - 39, player.y + 28);
-        ctx.arc(player.x - 39, player.y + 28, 3, 0, 2 * Math.PI);
-        ctx.moveTo(player.x, player.y + 15)
-        ctx.arc(player.x, player.y + 20, 4, 0, 2 * Math.PI);
-        ctx.moveTo(player.x + 10, player.y + 22);
-        ctx.arc(player.x + 10, player.y + 22, 2, 0, 2 * Math.PI);
-        ctx.moveTo(player.x - 10, player.y + 22);
-        ctx.arc(player.x - 10, player.y + 22, 2, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.fill();
+    ctx.moveTo(player.x - 39, player.y + 28);
+    ctx.arc(player.x - 39, player.y + 28, 3, 0, 2 * Math.PI);
+    ctx.moveTo(player.x, player.y + 15)
+    ctx.arc(player.x, player.y + 20, 4, 0, 2 * Math.PI);
+    ctx.moveTo(player.x + 10, player.y + 22);
+    ctx.arc(player.x + 10, player.y + 22, 2, 0, 2 * Math.PI);
+    ctx.moveTo(player.x - 10, player.y + 22);
+    ctx.arc(player.x - 10, player.y + 22, 2, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
 }
 
-function movePlayer(){
+function drawBullet() {
+	ctx.beginPath();
+	ctx.strokeStyle = "white";
+	ctx.beginPath();
+	ctx.moveTo(player.x, player.y + 3);
+	ctx.lineTo(player.x, player.y + 8);
+	ctx.stroke();
+}
+
+function moveBullet() {
+	y++;
+}
+
+function shootBullet() {
+	drawBullet();
+	moveBullet();
+}
+
+function movePlayer() {
 //	if(keys['ArrowDown']){
 //		player.y += player.speed;
 //	}
 //	if(keys['ArrowUp']){
 //		player.y -= player.speed;
 //	}
-	if(keys['ArrowRight'] && player.x < 400){
+	if(keys['ArrowRight','d'] && player.x < 400){
 		player.x += player.speed;
 	}
-	if(keys['ArrowLeft'] && player.x > 50){
+	if(keys['ArrowLeft','a'] && player.x > 0){
 		player.x -= player.speed;
 	}
-	if(player.y < 0){
-		player.y = 400;
-	}
-	if(player.y > 400){
-		player.y = 0;
+	if(keys['Space']){
+		shootBullet();
 	}
 
 }
