@@ -60,18 +60,14 @@ function drawBullet() {
 	ctx.beginPath();
 	ctx.strokeStyle = "white";
 	ctx.beginPath();
-	ctx.moveTo(player.x, player.y + 3);
-	ctx.lineTo(player.x, player.y + 8);
+	ctx.moveTo(player.x, player.y - 10);
+	ctx.lineTo(player.x, player.y - 15);
 	ctx.stroke();
-}
-
-function moveBullet() {
-	y++;
 }
 
 function shootBullet() {
 	drawBullet();
-	moveBullet();
+	y = y + 1;
 }
 
 function movePlayer() {
@@ -81,13 +77,19 @@ function movePlayer() {
 //	if(keys['ArrowUp']){
 //		player.y -= player.speed;
 //	}
-	if(keys['ArrowRight','d'] && player.x < 400){
+	if(keys['ArrowRight'] && player.x < 400){
 		player.x += player.speed;
 	}
-	if(keys['ArrowLeft','a'] && player.x > 0){
+	if(keys['d'] && player.x < 400){
+		player.x += player.speed;
+	}
+	if(keys['ArrowLeft'] && player.x > 0){
 		player.x -= player.speed;
 	}
-	if(keys['Space']){
+	if(keys['a'] && player.x > 0){
+		player.x -= player.speed;
+	}
+	if(keys[' ']){
 		shootBullet();
 	}
 
@@ -127,6 +129,7 @@ function animate() {
 }
 function handleKeyPress(w){
 	keys[w.key] = true;
+	console.log(w.key);
 }
 
 document.addEventListener('keydown', handleKeyPress);
