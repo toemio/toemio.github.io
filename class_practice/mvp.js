@@ -38,6 +38,8 @@ function drawPlayer() {
 	ctx.lineTo(player.x, player.y);
 	ctx.stroke();
 	ctx.fill();
+	ctx.shadowColor = "#FF8";
+	ctx.shadowBlur = 10;
 	drawCircles();
 }
 
@@ -56,19 +58,24 @@ function drawCircles() {
     ctx.fill();
 }
 
-function drawBullet() {
-	ctx.beginPath();
-	ctx.strokeStyle = "white";
-	ctx.beginPath();
-	ctx.moveTo(player.x, player.y - 10);
-	ctx.lineTo(player.x, player.y - 15);
-	ctx.stroke();
-}
+//function drawBullet() {
+//	ctx.beginPath();
+//	ctx.strokeStyle = "white";
+//	ctx.beginPath();
+//	ctx.moveTo(player.x, player.y - 10);
+//	ctx.lineTo(player.x, player.y - 15);
+//	ctx.stroke();
+//}
 
-function shootBullet() {
-	drawBullet();
-	y = y + 1;
-}
+//function shootBullet() {
+//	const speed = 5;
+//	const delay = 7;
+//	const damage = 1;
+//	const bulletX = player.x;
+//	const bulletY = player.y;
+//	bulletController.shoot(bulletX,bulletY,speed,damage,delay);
+//	y = y + 1;
+//}
 
 function movePlayer() {
 //	if(keys['ArrowDown']){
@@ -108,6 +115,7 @@ function animate() {
 //	drawScore();
 	drawPlayer();
 	movePlayer();
+	shootBullet();
 //    x = x + dx;
 //    y = y + dy;
 
