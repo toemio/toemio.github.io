@@ -2,10 +2,7 @@ const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 let x = 0;
-//let dx = 5;
 let y = 0;
-//let dy =1; 
-//let score = 0;
 let gameRunning = true;
 
 const player = {
@@ -33,8 +30,6 @@ function drawDoritoship(ctx, x, y, angle) {
     ctx.fill();
     drawDspurple(ctx, x, y, angle);
 }
-
-
 
 function drawDspurple(ctx, x, y, angle) {
     ctx.beginPath();
