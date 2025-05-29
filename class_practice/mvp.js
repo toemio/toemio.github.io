@@ -103,7 +103,7 @@ function drawJpurple(ctx, x, y, angle) {
    ctx.fill();
 }
 
-function drawEnemies(ctx, x, y) {
+function drawEnemies(ctx, x, y, angle) {
 	drawDoritoship(ctx, 50, 50);
 	drawJeremy(ctx, 100, 50);
 	drawDoritoship(ctx, 150, 50);
