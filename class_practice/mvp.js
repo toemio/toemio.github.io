@@ -192,18 +192,11 @@ function movePlayer() {
 	if(keys['a'] && player.x > 0){
 		player.x -= player.speed;
 	}
-	if(keys[' ']){
-		shootBullet();
-	}
+//	if(keys[' ']){
+//		shootBullet();
+//	}
 
 }
-
-//function drawScore(){
-//	ctx.font = "10px Arial";
-//	ctx.fillText(score, 10,10);
-	
-//}
-
 
 function animate() {
 //	score++;
@@ -213,7 +206,7 @@ function animate() {
 	movePlayer();
 	drawEnemies();
 	drawJeremys();
-	shootBullet();
+//	shootBullet();
 //    x = x + dx;
 //    y = y + dy;
 
