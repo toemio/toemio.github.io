@@ -197,7 +197,6 @@ function animate() {
 	drawPlayer();
 	movePlayer();
 	drawEnemies();
-	drawJeremys();
 	shootBullet();
     requestAnimationFrame(animate);
 }
