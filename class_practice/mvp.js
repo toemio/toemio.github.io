@@ -1,5 +1,5 @@
 const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2D");
+const ctx = canvas.getContext("2d");
 
 let x = 0;
 let y = 0;
@@ -196,4 +196,6 @@ document.addEventListener('keyup', (w) => {
 });
 
 
+alert(ctx);
+ctx = document.getElementById("myCanvas");
 animate();
