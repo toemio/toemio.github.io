@@ -196,4 +196,6 @@ document.addEventListener('keyup', (w) => {
 });
 
 
+alert(ctx);
+ctx = document.getElementById("myCanvas");
 animate();
