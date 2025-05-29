@@ -134,8 +134,6 @@ function drawPlayer() {
 	ctx.lineTo(player.x, player.y);
 	ctx.stroke();
 	ctx.fill();
-	ctx.shadowColor = "#FF8";
-	ctx.shadowBlur = 10;
 	drawCircles();
 }
 
@@ -154,32 +152,26 @@ function drawCircles() {
     ctx.fill();
 }
 
-//function drawBullet() {
-//	ctx.beginPath();
-//	ctx.strokeStyle = "white";
-//	ctx.beginPath();
-//	ctx.moveTo(player.x, player.y - 10);
-//	ctx.lineTo(player.x, player.y - 15);
-//	ctx.stroke();
-//}
+function drawBullet() {
+	ctx.beginPath();
+	ctx.strokeStyle = "white";
+	ctx.beginPath();
+	ctx.moveTo(player.x, player.y - 10);
+	ctx.lineTo(player.x, player.y - 15);
+	ctx.stroke();
+}
 
-//function shootBullet() {
-//	const speed = 5;
-//	const delay = 7;
-//	const damage = 1;
-//	const bulletX = player.x;
-//	const bulletY = player.y;
-//	bulletController.shoot(bulletX,bulletY,speed,damage,delay);
-//	y = y + 1;
-//}
+function shootBullet() {
+	const speed = 5;
+	const delay = 7;
+	const damage = 1;
+	const bulletX = player.x;
+	const bulletY = player.y;
+	bulletController.shoot(bulletX,bulletY,speed,damage,delay);
+	y = y + 1;
+}
 
 function movePlayer() {
-//	if(keys['ArrowDown']){
-//		player.y += player.speed;
-//	}
-//	if(keys['ArrowUp']){
-//		player.y -= player.speed;
-//	}
 	if(keys['ArrowRight'] && player.x < 400){
 		player.x += player.speed;
 	}
@@ -192,9 +184,9 @@ function movePlayer() {
 	if(keys['a'] && player.x > 0){
 		player.x -= player.speed;
 	}
-//	if(keys[' ']){
-//		shootBullet();
-//	}
+	if(keys[' ']){
+		shootBullet();
+	}
 
 }
 
@@ -206,23 +198,7 @@ function animate() {
 	movePlayer();
 	drawEnemies();
 	drawJeremys();
-//	shootBullet();
-//    x = x + dx;
-//    y = y + dy;
-
-//    if(x > 350){
-//        dx = dx * -1;
-//    }
-//    if(x < 0){
-//        dx = dx * -1;
-//    }
-
-//    if(y > 350){
-//        dy = dy * -1;
-//    }
-//    if(y < 0){
-//        dy = dy * -1;
-//    }
+	shootBullet();
     requestAnimationFrame(animate);
 }
 
