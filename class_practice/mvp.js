@@ -61,12 +61,7 @@ function drawJeremy(ctx, x, y, angle) {
    y = y + 10;
    ctx.moveTo(x, y + 2);
    ctx.lineTo(x + 16, y + 16);
-//   ctx.lineTo(x + 5, y + 17);
-//   ctx.lineTo(x + 5, y + 10);
    ctx.lineTo(x, y + 8);
-//   ctx.lineTo(x - 5, y + 10);
-//   ctx.lineTo(x - 5, y + 17);
-//   ctx.lineTo(x - 13, y + 14);
    ctx.lineTo(x - 16, y + 16);
    ctx.lineTo(x, y + 2);
    ctx.stroke();
@@ -167,14 +162,8 @@ function shootBullet() {
 }
 
 function movePlayer() {
-	if(keys['ArrowRight'] && player.x < 400){
-		player.x += player.speed;
-	}
 	if(keys['d'] && player.x < 400){
 		player.x += player.speed;
-	}
-	if(keys['ArrowLeft'] && player.x > 0){
-		player.x -= player.speed;
 	}
 	if(keys['a'] && player.x > 0){
 		player.x -= player.speed;
